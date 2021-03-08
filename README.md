@@ -147,3 +147,8 @@ Met geluiden in combinatie met kleur en goede omschrijving van de muziek kan ond
 
 Check de kleurtoegankelijkheid van voor- en achtergrond, er moet een goed contrast zijn. Ik wil geen moeite hoeven doen om de ondertiteling te lezen.
 
+### Zaterdag 6 maart
+Ik ben gaan experimenteren met fonts en het vormgeven van de geluiden. 
+
+### Maandag 8 maart 
+Vandaag liep ik heel erg vast. De ondertiteling was ineens niet meer zichtbaar, ik was niet tevreden met de vormgegeven geluiden en ik wilde totaal wat anders. Ik heb toen besloten om weer helemaal fris te starten in een nieuw repository.
