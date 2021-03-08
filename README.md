@@ -81,3 +81,69 @@ Voor een goede onderbouwing van je keuze voor een ander fragment moet je deze vr
 Je kan dan de nodige HTML en JavaScript genereren door gebruik te maken van [caption generator](https://cmda-minor-vid.github.io/web-typography-18-19/generator/) (in Google Chrome). 
 
 Als je de closed captions wil bewerken dan kan je een tool zoals [Amber Script](https://www.amberscript.com/en) gebruiken. Daar kan je exporteren als `.srt`, en die kan je weer door de generator halen.
+
+# Logboek
+
+### Dinsdag 2 maart
+Ik heb de code doorgenomen en alles via github klaargezet. Ik heb de "lines" ook in de JS gezet zodat ik weet wat ik moet aanroepen in de CSS.
+
+### Vrijdag 5 maart
+
+We hebben een interview gehad met Darice. We begrijpen nu beter hoe het is om doof te zijn en over hoe je dan dingen ervaart. Ook zijn we er achter gekomen wat voor films Darice leuk vind en wat ze belangrijk vind bij het lezen van ondertiteling.
+
+**_Ben je altijd al doof geweest?_**
+
+Nee ik was altijd slechthorend, in 2007 doof. Weet wat ik mis, ben niet opgegroei met gebarentaal. Ik gebruikt gesprokentaal. 
+
+**_Hoe was de eerste keer dat je een film keek zonder geluid?_**
+
+Ik miste de ervaring van de muziek/achtergrondgeluid die bij een film hoort. Als je niks hoort, wordt een groot deel van de spanning in een film weggenomen. Ik ga bijna nooit meer naar de bioscoop. Ik ga alleen als er een goede actiefilm uitkomt (zoals Marvel). Doordat het geluid zo hard is in de bioscoop, hoor ik soms klanken.
+
+**_Wat zijn je hobbies?_**
+
+Alles wat internet is, html, css, webblog, nieuwsblog, netflix kijken (Friends) en ik houd van boeken lezen.
+	
+**_Ben je een rustig of druk persoon?_**
+
+Ik houd van minimalisme. Soms vind ik kleuren en drukte mooi, als het maar strak gedaan is.
+	
+**_Ben je snel afgeleid, zo ja waardoor?_**
+
+Ja met films kijken wel, als er teveel op het scherm gebeurt word ik afgeleid van het verhaal. 
+
+**_Welke dingen vallen extra op in het leven als je doof bent_**
+
+Als je doof bent merk je pas hoe lastig het is om gesprekken te volgen. We leven in een wereld die ontoegankelijk is voor dove mensen.
+
+**_Hoe zie jij de opdracht het liefst uitgevoerd?_**
+
+Ik vind het leuk als er wordt gespeeld met lettertype, achtergrond en kleuren. Het is prettig als het een geheel is.
+
+**_Vind je het fijn om te kunnen zien wie aan het woord is?_**
+
+Subtiele verschillen in tekst zoals; italic, sans serif/serif, monospace voor aparte stemmen. De ondertiteling en achtergrond moeten niet erg afleiden van de film.
+
+**_Heb je irritaties bij het kijken van films?_**
+
+Ja, de ondertiteling is soms erg slap. Het verdwijnt bijvoorbeeld heel snel terwijl de tekst lang is, op deze manier kan ik niet alles lezen. Ik vind het fijn als omschreven wordt wat voor soort muziek op de achtergrond is, dat zet de sfeer van de film. In sommige ondertiteling staat alleen "muziek", hier kan ik me erg aan irriteren. Als er twee talen gesproken worden, zeg dan bijvoorbeeld wat er in het Spaans wordt gesproken en niet “er wordt Spaans gesproken”.
+
+**_Heb je liever NL of EN ondertiteling?_**
+
+Ik kijk films en series altijd in de originele taal, de ondertiteling moet dezelfde taal zijn.
+
+**_Welke fontsize werkt voor jou het beste?_**
+
+Rond de 16/18px, hangt af van het lettertype.
+
+**_Wat vind je van de film "Bladerunner 2049"?_**
+
+Ik houd totaal niet van post-apocalyptische films, de wereld is al erg genoeg.
+
+**_Denk je dat de ondertiteling het fragment interessanter zou kunnen maken?_**
+
+Met geluiden in combinatie met kleur en goede omschrijving van de muziek kan ondertiteling de film zeker interessant maken.
+
+**_Heb je nog tips voor ons?_** 
+
+Check de kleurtoegankelijkheid van voor- en achtergrond, er moet een goed contrast zijn. Ik wil geen moeite hoeven doen om de ondertiteling te lezen.
+
