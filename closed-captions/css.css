@@ -21,21 +21,22 @@ Feel free to adjust the defaults to your needs.
 }
 
 body {
-    margin: 0;
+    background-color: black;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#errorscreen {
+    width: 100%;
+    height: 100%;
+}
+
+#videoplaceholder {
+    margin: 0 auto;
     position: absolute;
-    transform: translate(0, -50%);
-    margin: 0;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    background-image: "https://giphy.com/embed/lCkumTggV53xe";
-    background-repeat: no-repeat;
-}
-
-.background {
-    width: 100%;
-    position:
 }
 
 .voice1 {
@@ -156,7 +157,6 @@ Sounds.
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
 .sound1 {
-    background-image: url("hallway.jpg");
     background-color: black;
 }
 
@@ -168,16 +168,6 @@ iframe {
 .sound1 iframe {
     transform: scale(1.2);
     transition: 2s;
-}
-
-/* The moment the class .sound1 is added to the body, the background is yellow */
-.sound1 {
-    background-image: url("hallway.jpg");
-    background-color: black;
-}
-
-iframe {
-    transition: 1s;
 }
 
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
