@@ -278,13 +278,14 @@ iframe {
     position: absolute;
     text-align: center;
 }
-.bg {
-    position: fixed;
+
+.background {
+    position: absolute;
     width: 200%;
-    height: 100vh;
+    height: 1000px;
     /* background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0; */
-    background: transparent url('https://failedarchitecture.com/wp-content/uploads/2017/11/bladerunner-1500x750.jpg') repeat 0 0;
-    background-repeat: no-repeat;
+    background: transparent url('https://i.pinimg.com/originals/16/02/b2/1602b26c05ee78120695d592a68b8912.gif') repeat 0 0;
+    background-repeat: repeat;
     opacity: 0.6;
     visibility: visible;
     z-index: -10;
@@ -548,4 +549,3 @@ iframe {
         transform: scale(1);
     }
 }
-
