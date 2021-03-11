@@ -6,6 +6,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 0;
 }
 
 /* **********************************************
@@ -66,6 +67,14 @@ Feel free to adjust the defaults to your needs.
     font-size: 30px;
     justify-content: center;
     color: red;
+}
+
+#zoom1 {
+    font-size: 35px;
+}
+
+#zoom2 {
+    font-size: 40px;
 }
 
 /* **********************************************
@@ -152,15 +161,12 @@ Sounds.
 	a sound starts.
 *********************************************  */
 
-.sound0 {
-    /* background: rgb(2,0,36);
-	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 50%, rgba(255,0,0,1) 100%); */
-}
+.sound0 {}
 
 /* buzzer rood oplichten*/
 
 .sound1 {
-    animation-name: pulse;
+    animation-name: buzzer;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
 }
@@ -217,11 +223,6 @@ Sounds.
     animation-timing-function: ease-out;
 }
 
-/* .sound7 .alarm-8{
-	transition: 0.5s;
-  animation: captionOndersteuning 1s ease;
-} */
-
 .sound9 iframe {
     animation-name: grow;
     animation-duration: 42s;
@@ -230,7 +231,7 @@ Sounds.
 }
 
 .sound9 {
-    animation-name: bg-heavy;
+    animation-name: liftcolor3;
     animation-duration: 42s;
     animation-timing-function: ease-out;
     overflow: hidden;
@@ -249,16 +250,12 @@ Sounds.
 }
 
 
-/* .sound9 .beep-1{
-	transition: 0.5s;
-  animation: captionOndersteuning 1s ease;
-	animation-duration: 42s;
-	margin-left: -80px;
-} */
 iframe {
     transition: 1s;
     display: flex;
     align-self: center;
+    height: 550px;
+    width: 1000px;
 }
 
 .caption-ondersteuning {
@@ -281,7 +278,7 @@ iframe {
 
 .background {
     position: absolute;
-    width: 200%;
+    width: 250%;
     height: 1000px;
     /* background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0; */
     background: transparent url('https://i.pinimg.com/originals/16/02/b2/1602b26c05ee78120695d592a68b8912.gif') repeat 0 0;
@@ -291,7 +288,7 @@ iframe {
     z-index: -10;
 }
 
-@keyframes pulse {
+@keyframes buzzer {
     0% {
         transform: scale(0.95);
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
@@ -507,13 +504,9 @@ iframe {
     }
 }
 
-@keyframes alarm {
-    0% {
-        background-color: darkred;
-    }
-
-    50.0% {
-        background-color: skyblue;
+@keyframes liftcolor3 {
+    70.0% {
+        background-color: deepskyblue;
     }
 
     100.0% {
@@ -521,7 +514,21 @@ iframe {
     }
 }
 
-@keyframes pulse {
+@keyframes alarm {
+    0% {
+        background-color: darkred;
+    }
+
+    50.0% {
+        background-color: blue;
+    }
+
+    100.0% {
+        background-color: black;
+    }
+}
+
+@keyframes buzzer {
     0% {
         background-color: #111;
     }
