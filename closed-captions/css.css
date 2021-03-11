@@ -20,24 +20,37 @@ Feel free to adjust the defaults to your needs.
     opacity: 0;
 }
 
+html,
 body {
+    height: 100%;
+    width: 100%;
+
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
     background-color: black;
 }
 
-/* Style the video: 100% width and height to cover the entire window */
-#errorscreen {
-    width: 100%;
+#video {
     height: 100%;
+    width: 100%;
+    /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 100%;
+    /* 100 * 9 / 16 */
+    z-index: -1;
+    background: src(#video);
 }
 
-#videoplaceholder {
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
 
 .voice1 {
     font-family: "brenner slab";
