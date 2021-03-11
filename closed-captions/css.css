@@ -1,3 +1,13 @@
+body {
+    background-color: black;
+    transition: 3s;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 /* **********************************************
 Basic mechanics
 Hide all paragraphs by default
@@ -5,14 +15,21 @@ Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
+#closed-captions {
+    align-self: center;
+}
+
 #closed-captions p {
     opacity: 0;
     transition: .05s;
     position: absolute;
+    display: block;
+    transform: translate(-50%);
 }
 
 #closed-captions .on {
     opacity: 1;
+    transition: 0.1s;
 }
 
 #closed-captions .off {
@@ -20,60 +37,35 @@ Feel free to adjust the defaults to your needs.
     opacity: 0;
 }
 
-html,
-body {
-    height: 100%;
-    width: 100%;
-
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
-body {
-    height: 100%;
-    width: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    background-color: black;
-}
-
-#video {
-    height: 100%;
-    width: 100%;
-    /* 100 * 16 / 9 */
-    min-width: 100%;
-    min-height: 100%;
-    /* 100 * 9 / 16 */
-    z-index: -1;
-    background: src(#video);
-}
-
-
 .voice1 {
     font-family: "brenner slab";
     font-style: italic;
     color: greenyellow;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .voice2 {
     font-family: "brenner sans";
     font-style: normal;
-    font-size: 20px;
+    font-size: 30px;
     color: white;
+    justify-content: center;
 }
 
 .voice3 {
     font-family: "brenner mono";
     font-style: italic;
+    font-size: 30px;
     color: yellow;
+    justify-content: center;
 }
 
 .voice4 {
+    font-family: "brenner sans condensed";
     font-style: italic;
+    font-size: 30px;
+    justify-content: center;
+    color: red;
 }
 
 /* **********************************************
@@ -86,122 +78,474 @@ You probably want to change the styling.
 ********************************************** */
 .p0 span {
     opacity: 0;
-    font-family: brenner;
+    font-family: "brenner slab";
+    font-style: italic;
+    color: greenyellow;
+    font-size: 20px;
 }
 
 .p0.on span:first-of-type {
     opacity: 1;
     transition: 0s;
-    font-weight: 200;
 }
 
 .p0.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .4s;
     margin-right: -.25em;
-    font-weight: 400;
 }
 
 .p0.on span:nth-of-type(3) {
     opacity: 1;
     transition: 0s .5s;
     margin-right: -.25em;
-    font-weight: 600;
 }
 
 .p0.on span:nth-of-type(4) {
     opacity: 1;
     transition: 0s .7s;
     margin-right: -.25em;
-    font-weight: 800;
 }
 
 .p0.on span:nth-of-type(5) {
     opacity: 1;
     transition: 0s 1.1s;
     margin-right: -.25em;
-    font-family: "brenner sans";
 }
 
 .p0.on span:nth-of-type(6) {
     opacity: 1;
     transition: 0s 1.4s;
     margin-right: -.25em;
-    font-family: "brenner display";
 }
 
 .p0.on span:nth-of-type(7) {
     opacity: 1;
     transition: 0s 1.7s;
     margin-right: -.25em;
-    font-family: "brenner script";
 }
 
 .p0.on span:nth-of-type(8) {
     opacity: 1;
     transition: 0s 2s;
-    font-family: "brenner script";
 }
 
 .p0.on span:nth-of-type(9) {
     opacity: 1;
     transition: 0s 3s;
-    font-family: "brenner Sans condensed";
 }
 
 .p0.on span:nth-of-type(10) {
     opacity: 1;
     transition: 0s 3.2s;
-    font-family: "brenner mono";
 }
 
 .p0.on span:nth-of-type(11) {
     opacity: 1;
     transition: 0s 3.7s;
-    font-family: "brenner slab";
 }
 
 /* **********************************************
 Sounds.
-	You can style the whole body, or you can 
+	You can style the whole body, or you can
 	style anything within the body the moment
 	a sound starts.
 *********************************************  */
 
-/* The moment the class .sound1 is added to the body, the background is yellow */
-.sound1 {
-    background-color: black;
+.sound0 {
+    /* background: rgb(2,0,36);
+	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 50%, rgba(255,0,0,1) 100%); */
 }
 
+/* buzzer rood oplichten*/
+
+.sound1 {
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
+/* alarm rood en blauw oplichten en lift*/
+.sound2 {
+    animation-name: alarm;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.sound2 iframe {
+    animation-name: lift;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+/* lage toon trilling */
+.sound3 iframe {
+    animation: shake 0.9s;
+    transform: translate3d(0, 0, 0);
+}
+
+/* piep fel groen */
+.sound4 {
+    animation-name: liftcolor;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+/* lage toon trilling */
+.sound5 iframe {
+    animation: shake1 1.1s;
+    transform: translate3d(0, 0, 0);
+}
+
+/* piep fel groen */
+.sound6 {
+    animation-name: liftcolor1;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-out;
+}
+
+/* lage toon trilling */
+.sound7 iframe {
+    animation: shake2 1.1s;
+    transform: translate3d(0, 0, 0);
+}
+
+/* piep fel groen */
+.sound8 {
+    animation-name: liftcolor2;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-out;
+}
+
+/* .sound7 .alarm-8{
+	transition: 0.5s;
+  animation: captionOndersteuning 1s ease;
+} */
+
+.sound9 iframe {
+    animation-name: grow;
+    animation-duration: 42s;
+    animation-timing-function: ease-out;
+    overflow: hidden;
+}
+
+.sound9 {
+    animation-name: bg-heavy;
+    animation-duration: 42s;
+    animation-timing-function: ease-out;
+    overflow: hidden;
+}
+
+.sound10 {
+    animation-name: bg-heavy-2;
+    animation-duration: 50s;
+    animation-timing-function: ease-out;
+    overflow: hidden;
+}
+
+.sound11 iframe {
+    animation: tring 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+}
+
+
+/* .sound9 .beep-1{
+	transition: 0.5s;
+  animation: captionOndersteuning 1s ease;
+	animation-duration: 42s;
+	margin-left: -80px;
+} */
 iframe {
     transition: 1s;
+    display: flex;
+    align-self: center;
 }
 
-/* The moment the class .sound1 is added to the body, the movie makes a turn */
-.sound1 iframe {
-    transform: scale(1.2);
-    transition: 2s;
+.caption-ondersteuning {
+    display: flex;
+    place-self: center;
+    padding-right: 80px;
 }
 
-/* The moment the class .sound1 is added to the body, the movie makes a turn */
-.sound1 iframe {
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-    transform: scale(1);
-    animation: pulse 1.8s;
+.caption-ondersteuning p {
+    opacity: 0;
+    z-index: 999;
+    font-family: "Brenner Sans";
+    font-weight: 600;
+    font-size: 19px;
+    color: pink;
+    margin-top: -50px;
+    position: absolute;
+    text-align: center;
+}
+.bg {
+    position: fixed;
+    width: 200%;
+    height: 100vh;
+    /* background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0; */
+    background: transparent url('https://failedarchitecture.com/wp-content/uploads/2017/11/bladerunner-1500x750.jpg') repeat 0 0;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    visibility: visible;
+    z-index: -10;
 }
 
 @keyframes pulse {
     0% {
-        transform: scale(1);
+        transform: scale(0.95);
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
     }
 
-    50% {
-        transform: scale(1.1);
+    70% {
+        transform: scale(1.2);
         box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
     }
 
     100% {
-        transform: scale(1);
+        transform: scale(1.4);
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    15%,
+    95% {
+        transform: translate3d(10px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(-15px, 0, 0);
+    }
+
+    25%,
+    85% {
+        transform: translate3d(15px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-20px, 0, 0);
+    }
+
+    35%,
+    55%,
+    75% {
+        transform: translate3d(20px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(-25px, 0, 0);
+    }
+
+    45%,
+    65% {
+        transform: translate3d(25px, 0, 0);
+    }
+}
+
+@keyframes shake1 {
+
+    10%,
+    90% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    15%,
+    95% {
+        transform: translate3d(10px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(-15px, 0, 0);
+    }
+
+    25%,
+    85% {
+        transform: translate3d(15px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-20px, 0, 0);
+    }
+
+    35%,
+    55%,
+    75% {
+        transform: translate3d(20px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(-25px, 0, 0);
+    }
+
+    45%,
+    65% {
+        transform: translate3d(25px, 0, 0);
+    }
+}
+
+@keyframes shake2 {
+
+    10%,
+    90% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    15%,
+    95% {
+        transform: translate3d(10px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(-15px, 0, 0);
+    }
+
+    25%,
+    85% {
+        transform: translate3d(15px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-20px, 0, 0);
+    }
+
+    35%,
+    55%,
+    75% {
+        transform: translate3d(20px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(-25px, 0, 0);
+    }
+
+    45%,
+    65% {
+        transform: translate3d(25px, 0, 0);
+    }
+}
+
+@keyframes lift {
+    0% {
+        transform: translate3d(0, -20px, 0);
+        background-color: red;
+    }
+
+    25.0% {
+        transform: translate3d(0, -60px, 0);
+        background-color: #1A2320;
+    }
+
+    50.0% {
+        transform: translate3d(0, -20px, 0);
+        background-color: #1A2320;
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+        background-color: #111;
+    }
+}
+
+@keyframes liftcolor {
+    0% {
+        background-color: green;
+    }
+
+    70.0% {
+        background-color: greenyellow;
+    }
+
+    100.0% {
+        background-color: black;
+    }
+}
+
+@keyframes liftcolor1 {
+    0% {
+        background-color: green;
+    }
+
+    70.0% {
+        background-color: greenyellow;
+    }
+
+    100.0% {
+        background-color: black;
+    }
+}
+
+@keyframes liftcolor2 {
+    0% {
+        background-color: green;
+    }
+
+    70.0% {
+        background-color: greenyellow;
+    }
+
+    100.0% {
+        background-color: black;
+    }
+}
+
+@keyframes alarm {
+    0% {
+        background-color: darkred;
+    }
+
+    50.0% {
+        background-color: skyblue;
+    }
+
+    100.0% {
+        background-color: black;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #111;
+    }
+
+    70.0% {
+        background-color: red;
+    }
+
+    100.0% {
+        background-color: #111;
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    97% {
+        transform: scale(1.4);
+        transform-origin: center center;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
