@@ -152,3 +152,27 @@ Ik ben gaan experimenteren met fonts en het vormgeven van de geluiden.
 
 ### Maandag 8 maart 
 Vandaag liep ik heel erg vast. De ondertiteling was ineens niet meer zichtbaar, ik was niet tevreden met de vormgegeven geluiden en ik wilde totaal wat anders. Ik heb toen besloten om weer helemaal fris te starten in een nieuw repository.
+
+### Dinsdag 9 maart - Donderdag 11 maart
+- Animatie sprint
+- Changed subtitles
+
+### Vrijdag 12 maart 
+#### Feedback Darice
+Bij de herhaling zou ik graag wat duidelijker willen zien dat er herhaald wordt. Ik vind het ook fijn als geluiden beschreven worden. Het is dat ik dit stukje nu uit mijn hoofd ken, maar anders zou ik niet weten wat voor geluiden er op de achtergrond te horen zijn. Fluisteren weergeven.
+
+#### Feedback Vasilis
+Je zou bij de pieptoon een andere achtergrond kunnen kiezen, dat zou duidelijker zijn. Als het stil is, zou ik de animated gif stoppen. De hele video hoor je een soort ruis en op dat moment is het stil, het zou logisch zijn als de achtergrond dan ook "stil" is.
+
+#### Inspiratie van anderen
+- Aangeven wie wat zegt
+- 1x,2x,3x bij herhaling laten zien of in laten faden.
+
+### Laatste sprint
+#### To do
+- Aangeven wie wat zegt
+- Ondertiteling nog een beetje verbeteren
+- Herhaling verbeteren
+- Achtergronden aanpassen (bij pieptoon, stilte, enz.)
+- Deel 2 van het filmpje
+- Experimenteren met animaties
