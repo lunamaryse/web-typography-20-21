@@ -223,6 +223,7 @@ Sounds.
     animation-timing-function: ease-out;
 }
 
+/*scherm wordt groter*/
 .sound9 iframe {
     animation-name: grow;
     animation-duration: 42s;
@@ -230,6 +231,7 @@ Sounds.
     overflow: hidden;
 }
 
+/*kleur blauw wordt feller*/
 .sound9 {
     animation-name: liftcolor3;
     animation-duration: 42s;
@@ -280,7 +282,6 @@ iframe {
     position: absolute;
     width: 250%;
     height: 1000px;
-    /* background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0; */
     background: transparent url('https://i.pinimg.com/originals/16/02/b2/1602b26c05ee78120695d592a68b8912.gif') repeat 0 0;
     background-repeat: repeat;
     opacity: 0.6;
