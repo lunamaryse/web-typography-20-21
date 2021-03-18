@@ -57,7 +57,7 @@ Feel free to adjust the defaults to your needs.
     font-family: "brenner mono";
     font-style: italic;
     font-size: 30px;
-    color: yellow;
+    color: orange;
     justify-content: center;
 }
 
@@ -67,6 +67,10 @@ Feel free to adjust the defaults to your needs.
     font-size: 30px;
     justify-content: center;
     color: red;
+}
+
+.person {
+    color: yellow;
 }
 
 #zoom1 {
@@ -160,7 +164,6 @@ Sounds.
 	style anything within the body the moment
 	a sound starts.
 *********************************************  */
-
 .sound0 {}
 
 /* buzzer rood oplichten*/
@@ -169,6 +172,26 @@ Sounds.
     animation-name: buzzer;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
+}
+
+.sound1 .background {
+    position: absolute;
+    width: 100%;
+    height: 820px;
+    background: transparent url('https://i.pinimg.com/originals/16/02/b2/1602b26c05ee78120695d592a68b8912.gif') repeat 0 0;
+    background-repeat: repeat;
+    opacity: 0.6;
+    visibility: visible;
+    z-index: -10;
+}
+
+.sound1 .buzzer {
+    transition: 0.3s;
+    animation: beschrijvingSound 1.4s ease;
+    font-family: "brenner mono";
+    font-size: 20px;
+    justify-content: center;
+    color: red;
 }
 
 /* alarm rood en blauw oplichten en lift*/
@@ -184,10 +207,28 @@ Sounds.
     animation-timing-function: ease-out;
 }
 
+.sound2 .sirene {
+    transition: 0.3s;
+    animation: beschrijvingSound 1.4s ease;
+    font-family: "brenner mono";
+    font-size: 20px;
+    justify-content: center;
+    color: white;
+}
+
 /* lage toon trilling */
 .sound3 iframe {
     animation: shake 0.9s;
     transform: translate3d(0, 0, 0);
+}
+
+.sound3 .lowtone {
+    transition: 0.3s;
+    animation: beschrijvingSound 1.4s ease;
+    font-family: "brenner mono";
+    font-size: 20px;
+    justify-content: center;
+    color: white;
 }
 
 /* piep fel groen */
@@ -197,10 +238,28 @@ Sounds.
     animation-timing-function: ease-out;
 }
 
+.sound4 .beep {
+    transition: 0.3s;
+    animation: beschrijvingSound 1.4s ease;
+    font-family: "brenner mono";
+    font-size: 20px;
+    justify-content: center;
+    color: greenyellow;
+}
+
 /* lage toon trilling */
 .sound5 iframe {
     animation: shake1 1.1s;
     transform: translate3d(0, 0, 0);
+}
+
+.sound5 .lowtone1 {
+    transition: 0.3s;
+    animation: beschrijvingSound 1.4s ease;
+    font-family: "brenner mono";
+    font-size: 20px;
+    justify-content: center;
+    color: white;
 }
 
 /* piep fel groen */
@@ -210,10 +269,28 @@ Sounds.
     animation-timing-function: ease-out;
 }
 
+.sound6 .beep1 {
+    transition: 0.3s;
+    animation: beschrijvingSound 1.4s ease;
+    font-family: "brenner mono";
+    font-size: 20px;
+    justify-content: center;
+    color: greenyellow;
+}
+
 /* lage toon trilling */
 .sound7 iframe {
     animation: shake2 1.1s;
     transform: translate3d(0, 0, 0);
+}
+
+.sound7 .lowtone2 {
+    transition: 0.3s;
+    animation: beschrijvingSound 1.4s ease;
+    font-family: "brenner mono";
+    font-size: 20px;
+    justify-content: center;
+    color: white;
 }
 
 /* piep fel groen */
@@ -221,6 +298,15 @@ Sounds.
     animation-name: liftcolor2;
     animation-duration: 1.7s;
     animation-timing-function: ease-out;
+}
+
+.sound8 .beep2 {
+    transition: 0.3s;
+    animation: beschrijvingSound 1.4s ease;
+    font-family: "brenner mono";
+    font-size: 20px;
+    justify-content: center;
+    color: greenyellow;
 }
 
 /*scherm wordt groter*/
@@ -239,54 +325,66 @@ Sounds.
     overflow: hidden;
 }
 
+.sound9 .background {
+    position: absolute;
+    width: 100%;
+    height: 820px;
+    background: transparent url('http://pa1.narvii.com/6902/ca0752f42196f9449572d03beab0980b663395f5r1-200-150_00.gif') repeat 0 0;
+    background-repeat: repeat;
+    opacity: 0.6;
+    visibility: visible;
+    z-index: -10;
+    transition-duration: 30s;
+}
+
+.sound9 .highbeep {
+    transition: 0.3s;
+    animation: beschrijvingSound 42s ease;
+    font-family: "brenner mono";
+    font-size: 20px;
+    justify-content: center;
+    color: deepskyblue;
+}
+
 .sound10 {
-    animation-name: bg-heavy-2;
-    animation-duration: 50s;
+    animation-name: liftcolor4;
+    animation-duration: 2s;
     animation-timing-function: ease-out;
     overflow: hidden;
 }
 
-.sound11 iframe {
-    animation: tring 0.82s cubic-bezier(.36, .07, .19, .97) both;
-    transform: translate3d(0, 0, 0);
+.sound10 .background {
+    position: absolute;
+    width: 100%;
+    height: 820px;
+    background: transparent url('https://st.mngbcn.com/static/assets/img/landings/blackFriday/black_shop.jpg') repeat 0 0;
+    background-repeat: repeat;
+    opacity: 0.6;
+    visibility: visible;
+    z-index: -10;
+    transition-duration: 1s;
 }
-
 
 iframe {
     transition: 1s;
     display: flex;
     align-self: center;
-    height: 550px;
-    width: 1000px;
+    height: 450px;
+    width: 800px;
 }
 
-.caption-ondersteuning {
+.beschrijvingsound {
     display: flex;
-    place-self: center;
-    padding-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 200px;
 }
 
-.caption-ondersteuning p {
+.beschrijvingsound p {
     opacity: 0;
     z-index: 999;
-    font-family: "Brenner Sans";
-    font-weight: 600;
-    font-size: 19px;
-    color: pink;
     margin-top: -50px;
     position: absolute;
-    text-align: center;
-}
-
-.background {
-    position: absolute;
-    width: 250%;
-    height: 1000px;
-    background: transparent url('https://i.pinimg.com/originals/16/02/b2/1602b26c05ee78120695d592a68b8912.gif') repeat 0 0;
-    background-repeat: repeat;
-    opacity: 0.6;
-    visibility: visible;
-    z-index: -10;
 }
 
 @keyframes buzzer {
@@ -515,6 +613,16 @@ iframe {
     }
 }
 
+@keyframes liftcolor4 {
+    70.0% {
+        background-color: black;
+    }
+
+    100.0% {
+        background-color: black;
+    }
+}
+
 @keyframes alarm {
     0% {
         background-color: darkred;
@@ -555,5 +663,19 @@ iframe {
 
     100% {
         transform: scale(1);
+    }
+}
+
+@keyframes beschrijvingSound {
+    0% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
