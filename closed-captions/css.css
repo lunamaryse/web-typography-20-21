@@ -39,46 +39,34 @@ Feel free to adjust the defaults to your needs.
 }
 
 .voice1 {
-    font-family: "brenner slab";
+    font-family: "brenner mono";
     font-style: italic;
     color: greenyellow;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .voice2 {
     font-family: "brenner sans";
     font-style: normal;
-    font-size: 30px;
+    font-size: 24px;
     color: white;
     justify-content: center;
 }
 
 .voice3 {
-    font-family: "brenner mono";
-    font-style: italic;
-    font-size: 30px;
-    color: orange;
+    font-family: "brenner sans";
+    font-style: normal;
+    font-size: 20px;
+    color: red;
     justify-content: center;
 }
 
 .voice4 {
     font-family: "brenner sans condensed";
-    font-style: italic;
-    font-size: 30px;
+    font-style: normal;
+    font-size: 24px;
     justify-content: center;
-    color: red;
-}
-
-.person {
-    color: yellow;
-}
-
-#zoom1 {
-    font-size: 35px;
-}
-
-#zoom2 {
-    font-size: 40px;
+    color: orange;
 }
 
 /* **********************************************
@@ -91,7 +79,7 @@ You probably want to change the styling.
 ********************************************** */
 .p0 span {
     opacity: 0;
-    font-family: "brenner slab";
+    font-family: "brenner mono";
     font-style: italic;
     color: greenyellow;
     font-size: 20px;
@@ -189,7 +177,7 @@ Sounds.
     transition: 0.3s;
     animation: beschrijvingSound 1.4s ease;
     font-family: "brenner mono";
-    font-size: 20px;
+    font-size: 16px;
     justify-content: center;
     color: red;
 }
@@ -211,7 +199,7 @@ Sounds.
     transition: 0.3s;
     animation: beschrijvingSound 1.4s ease;
     font-family: "brenner mono";
-    font-size: 20px;
+    font-size: 16px;
     justify-content: center;
     color: white;
 }
@@ -226,7 +214,7 @@ Sounds.
     transition: 0.3s;
     animation: beschrijvingSound 1.4s ease;
     font-family: "brenner mono";
-    font-size: 20px;
+    font-size: 16px;
     justify-content: center;
     color: white;
 }
@@ -242,7 +230,7 @@ Sounds.
     transition: 0.3s;
     animation: beschrijvingSound 1.4s ease;
     font-family: "brenner mono";
-    font-size: 20px;
+    font-size: 16px;
     justify-content: center;
     color: greenyellow;
 }
@@ -257,7 +245,7 @@ Sounds.
     transition: 0.3s;
     animation: beschrijvingSound 1.4s ease;
     font-family: "brenner mono";
-    font-size: 20px;
+    font-size: 16px;
     justify-content: center;
     color: white;
 }
@@ -273,7 +261,7 @@ Sounds.
     transition: 0.3s;
     animation: beschrijvingSound 1.4s ease;
     font-family: "brenner mono";
-    font-size: 20px;
+    font-size: 16px;
     justify-content: center;
     color: greenyellow;
 }
@@ -288,7 +276,7 @@ Sounds.
     transition: 0.3s;
     animation: beschrijvingSound 1.4s ease;
     font-family: "brenner mono";
-    font-size: 20px;
+    font-size: 16px;
     justify-content: center;
     color: white;
 }
@@ -304,7 +292,7 @@ Sounds.
     transition: 0.3s;
     animation: beschrijvingSound 1.4s ease;
     font-family: "brenner mono";
-    font-size: 20px;
+    font-size: 16px;
     justify-content: center;
     color: greenyellow;
 }
@@ -339,11 +327,11 @@ Sounds.
 
 .sound9 .highbeep {
     transition: 0.3s;
-    animation: beschrijvingSound 42s ease;
+    animation: beschrijvingSound 43s ease;
     font-family: "brenner mono";
-    font-size: 20px;
+    font-size: 16px;
     justify-content: center;
-    color: deepskyblue;
+    color: blue;
 }
 
 .sound10 {
@@ -365,6 +353,52 @@ Sounds.
     transition-duration: 1s;
 }
 
+.sound10 .silence {
+    transition: 0.3s;
+    animation: beschrijvingSound 11s ease;
+    font-family: "brenner mono";
+    font-size: 16px;
+    justify-content: center;
+    color: black;
+}
+
+.sound11 .background {
+    position: absolute;
+    width: 100%;
+    height: 820px;
+    background: transparent url('https://media4.giphy.com/media/jQS9YkJXofyeI/giphy.gif?cid=ecf05e47n0p8o6leyquzwh3zg6y3ipe490hrw2clb09y3qhm&rid=giphy.gif') repeat 0 0;
+    background-repeat: repeat;
+    opacity: 0.6;
+    visibility: visible;
+    z-index: -10;
+    transition-duration: 5s;
+}
+
+.sound11 iframe {
+    animation: shake3 45s;
+    transform: translate3d(0, 0, 0);
+}
+
+.sound11 .tense {
+    transition: 0.3s;
+    animation: beschrijvingSound 45s ease;
+    font-family: "brenner mono";
+    font-size: 16px;
+    justify-content: center;
+    color: red;
+}
+
+.sound12 .background {
+    position: absolute;
+    background: transparent url('https://st.mngbcn.com/static/assets/img/landings/blackFriday/black_shop.jpg') repeat 0 0;
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: 0.6;
+    visibility: visible;
+    z-index: -10;
+    transition-duration: 1s;
+}
+
 iframe {
     transition: 1s;
     display: flex;
@@ -377,13 +411,13 @@ iframe {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 200px;
+    padding-right: 250px;
 }
 
 .beschrijvingsound p {
     opacity: 0;
     z-index: 999;
-    margin-top: -50px;
+    margin-top: -40px;
     position: absolute;
 }
 
@@ -536,6 +570,25 @@ iframe {
     45%,
     65% {
         transform: translate3d(25px, 0, 0);
+    }
+}
+
+@keyframes shake3 {
+
+    40% {
+        transform: translate3d(100px, 0, 0);
+    }
+
+    70% {
+        transform: translate3d(-100px, 0, 0);
+    }
+
+    80% {
+        transform: translate3d(100px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(-100px, 0, 0);
     }
 }
 
